@@ -97,8 +97,8 @@ module.exports = function(config) {
     // global config for SauceLabs
     sauceLabs: {
       username: "sheff555",
-      accessKey: "bc4president",
-      startConnect: false,
+      accessKey: "d04372cc-0fc3-4e59-aa02-3cfd9df03240",
+      startConnect: true,
       testName: 'my unit tests101'
     },
 

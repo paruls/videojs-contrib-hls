@@ -93,5 +93,24 @@ module.exports = function(config) {
 
     // If browser does not capture in given timeout [ms], kill it
     captureTimeout: 60000
+
+    // global config for SauceLabs
+    sauceLabs: {
+      username: SAUCE_USERNAME,
+      accessKey: SAUCE_ACCESS_KEY,
+      startConnect: false,
+      testName: 'my unit tests101'
+    },
+
+    //define SL browsers
+    customLaunchers: {
+      sl_chrome_linux: {
+        base: 'SauceLabs',
+        browserName: 'chrome',
+        platform: 'linux'
+      }
+    }
+
+
   });
 };

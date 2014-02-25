@@ -92,7 +92,7 @@ module.exports = function(config) {
     //logLevel: config.LOG_INFO,
 
     // If browser does not capture in given timeout [ms], kill it
-    captureTimeout: 60000
+    captureTimeout: 60000,
 
     // global config for SauceLabs
     sauceLabs: {

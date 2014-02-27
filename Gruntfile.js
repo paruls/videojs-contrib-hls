@@ -106,6 +106,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-saucelabs');
   grunt.loadNpmTasks('grunt-karma');
 
   grunt.registerTask('manifests-to-js', 'Wrap the test fixtures and output' +

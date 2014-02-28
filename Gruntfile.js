@@ -98,6 +98,25 @@ module.exports = function(grunt) {
       }
     },
 
+    grunt.initConfig({
+    connect: {
+      server: {
+        options: {
+          base: "",
+          port: 9999
+        }
+      }
+    },
+    watch: {}
+  });
+
+  // Loading dependencies
+  for (var key in grunt.file.readJSON("package.json").devDependencies) {
+    if (key !== "grunt" && key.indexOf("grunt") === 0) grunt.loadNpmTasks(key);
+  }
+
+  grunt.registerTask("dev", ["connect", "watch"]);
+
 
   });
 
@@ -109,7 +128,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-saucelabs');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
   grunt.loadNpmTasks('grunt-karma');
 
   grunt.registerTask('manifests-to-js', 'Wrap the test fixtures and output' +

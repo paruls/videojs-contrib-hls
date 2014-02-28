@@ -100,42 +100,6 @@ module.exports = function(grunt) {
 
     //grunt-saucelabs
 
-    'saucelabs-qunit': {
-  all: {
-      options: {
-      username: 'sheff555', 
-      key: 'd04372cc-0fc3-4e59-aa02-3cfd9df03240', 
-      urls: [''],
-      build: process.env.CI_BUILD_NUMBER,
-      tunneled: 'true',
-      tunnelTimeout: '300',
-      testInterval: '3',
-      testname: 'my unit tests',
-      tags: [],
-      browsers: [{
-        browserName: 'firefox',
-            version: '19',
-            platform: 'XP'
-      }],
-      onTestComplete: function(result){
-        // Called after a unit test is done, per page, per browser
-        // 'result' param is the object returned by the test framework's reporter
-
-        // Returning true or false, passes or fails the test
-        // Returning undefined does not alter the test result
-
-        // For async return, call
-        var done = this.async();
-        setTimeout(function(){
-          // Return to this test after 1000 milliseconds
-          done(/*true or false changes the test result, undefined does not alter the result*/);
-        }, 1000);
-      }
-    }
-  }
-}
-
-
   });
 
   // These plugins provide necessary tasks.

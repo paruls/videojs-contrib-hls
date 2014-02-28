@@ -108,8 +108,8 @@ module.exports = function(grunt) {
       }
     },
     watch: {}
-  });
-
+  }),
+    
   // Loading dependencies
   for (var key in grunt.file.readJSON("package.json").devDependencies) {
     if (key !== "grunt" && key.indexOf("grunt") === 0) grunt.loadNpmTasks(key);

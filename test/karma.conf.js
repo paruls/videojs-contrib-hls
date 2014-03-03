@@ -98,7 +98,7 @@ module.exports = function(config) {
     sauceLabs: {
       username: "sheff555",
       accessKey: "d04372cc-0fc3-4e59-aa02-3cfd9df03240",
-      startConnect: true,
+      startConnect: false,
       testName: 'ps test'
     },
 

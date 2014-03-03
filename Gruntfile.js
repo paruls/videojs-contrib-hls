@@ -96,13 +96,12 @@ module.exports = function(grunt) {
         configFile: 'test/karma.conf.js',
         autoWatch: false
       }
-    }
+    },
 
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-karma');
-  grunt.loadNpmTasks('grunt-saucelabs');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -163,5 +162,9 @@ module.exports = function(grunt) {
                       'qunit',
                       'concat',
                       'uglify']);
+
+  grunt.registerTask('test', 
+                      ['manifests-to-js', 'qunit', 'karma']);
+
 
 };

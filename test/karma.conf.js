@@ -105,7 +105,7 @@ module.exports = function(config) {
     //define SL browsers
     customLaunchers: {
       "sl_chrome_linux": {
-        base: 'SauceLabs',
+        base: 'sauceLabs',
         browserName: 'chrome',
         platform: 'linux'
       }

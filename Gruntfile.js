@@ -96,15 +96,7 @@ module.exports = function(grunt) {
         configFile: 'test/karma.conf.js',
         autoWatch: false
       }
-    },
-
-  // Loading dependencies
-  for (var key in grunt.file.readJSON("package.json").devDependencies) {
-    if (key !== "grunt" && key.indexOf("grunt") === 0) grunt.loadNpmTasks(key);
-  }
-
-  grunt.registerTask("dev", ["connect", "watch"]);
-
+    }
 
   });
 

@@ -61,7 +61,8 @@ module.exports = function(config) {
       'karma-ie-launcher',
       'karma-opera-launcher',
       'karma-phantomjs-launcher',
-      'karma-safari-launcher'
+      'karma-safari-launcher',
+      'karma-sauce-launcher'
     ],
 
     // list of files to exclude
@@ -104,7 +105,7 @@ module.exports = function(config) {
 
     //define SL browsers
     customLaunchers: {
-      "sl_chrome_linux": {
+      sl_chrome_linux: {
         base: 'sauceLabs',
         browserName: 'chrome',
         platform: 'linux'

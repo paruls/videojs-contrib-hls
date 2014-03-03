@@ -33,7 +33,7 @@ module.exports = function(grunt) {
               'src/m3u8/m3u8-parser.js'
             ],
         dest: 'dist/videojs.hls.js'
-      },
+      }
     },
     uglify: {
       options: {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
       dist: {
         src: '<%= concat.dist.dest %>',
         dest: 'dist/videojs.hls.min.js'
-      },
+      }
     },
     qunit: {
       files: ['test/**/*.html', '!test/perf.html']
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
               '!test/tsSegment.js',
               '!test/fixtures/*.js',
               '!test/manifest/**']
-      },
+      }
     },
     watch: {
       gruntfile: {
@@ -82,7 +82,7 @@ module.exports = function(grunt) {
       test: {
         files: '<%= jshint.test.src %>',
         tasks: ['jshint:test', 'qunit']
-      },
+      }
     },
     karma: {
       options: {
@@ -98,18 +98,6 @@ module.exports = function(grunt) {
       }
     },
 
-    grunt.initConfig({
-    connect: {
-      server: {
-        options: {
-          base: "",
-          port: 9999
-        }
-      }
-    },
-    watch: {}
-  }),
-    
   // Loading dependencies
   for (var key in grunt.file.readJSON("package.json").devDependencies) {
     if (key !== "grunt" && key.indexOf("grunt") === 0) grunt.loadNpmTasks(key);

@@ -25,7 +25,8 @@
     "karma-phantomjs-launcher": "~0.1.1",
     "karma-safari-launcher": "~0.1.1",
     "karma-qunit": "~0.1.1",
-    "karma-sauce-launcher": "~0.1.8"
+    "karma-sauce-launcher": "~0.1.8",
+    "grunt-saucelabs": "~5.0.1"
   },
   "dependencies": {
     "video.js": "git+https://github.com/dmlap/video-js.git#v4.3.0-10",

@@ -165,6 +165,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', 
                       ['manifests-to-js', 'qunit', 'karma']);
+  
+  // travis build task
+  grunt.registerTask('build:travis', ['jshint', 'test:node', 'test:sauce-browser']);
 
 
 };

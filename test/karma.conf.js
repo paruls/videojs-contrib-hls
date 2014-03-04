@@ -112,10 +112,10 @@ module.exports = function(config) {
       platform: 'Windows XP'
     },
 
-    //sauce: { 
-    //  browsers: ['test_browser'],
-    //  singleRun: true
-    //}
+    sauce: { 
+         browsers: [chrome],
+        singleRun: true
+     }
 
   });
 };

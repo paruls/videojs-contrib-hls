@@ -12,7 +12,7 @@ rooms:
 secure: l5TTd5JuPAW883PtcyaIBcJI9Chr9JpsZPQAEUBKAgIEwzuS6y7t5arlkS1PwH6gi1FADzYDf+OXSIou4GkTSrIetnBcT/SAgF0gBKgIhj+eRkuCfZ4VaC7BPhfZ0hgYRE+5Ejf5BM2MJafRm0pj7OlqG4xKrQZwtuV1te5r3JY=
 
 addons:
-     sauce_connect: true
-       #username: "sheff555"
-       #access_key: "d04372cc-0fc3-4e59-aa02-3cfd9df03240"
+     sauce_connect: 
+       username: "sheff555"
+       access_key: "d04372cc-0fc3-4e59-aa02-3cfd9df03240"
 

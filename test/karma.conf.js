@@ -26,7 +26,7 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows)
     // Example usage:
-    //browsers: ['Chrome','Firefox','Safari'],
+    browsers: ['Chrome','Firefox','Safari'],
 
     // List of files / patterns to load in the browser
     // Add any new src files to this list.
@@ -112,10 +112,10 @@ module.exports = function(config) {
       platform: 'Windows XP'
     },
 
-    sauce: { 
-      browsers: ['test_browser'],
-      singleRun: true
-    }
+    //sauce: { 
+    //  browsers: ['test_browser'],
+    //  singleRun: true
+    //}
 
   });
 };

@@ -56,7 +56,7 @@ module.exports = function(config) {
 
     plugins: [
       'karma-qunit',
-      'karma-chrome-launcher',
+      //'karma-chrome-launcher',
       //'karma-firefox-launcher',
       //'karma-ie-launcher',
       //'karma-opera-launcher',

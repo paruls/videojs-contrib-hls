@@ -62,7 +62,6 @@ module.exports = function(config) {
       //'karma-opera-launcher',
       //'karma-phantomjs-launcher',
       //'karma-safari-launcher',
-      
       'karma-sauce-launcher'
     ],
 

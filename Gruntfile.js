@@ -86,7 +86,8 @@ module.exports = function(grunt) {
     },
     karma: {
       options: {
-        configFile: 'test/karma.conf.js'
+        configFile: 'test/karma.conf.js',
+        frameworks: ['qunit']
       },
       dev: {
         configFile: 'test/karma.conf.js',

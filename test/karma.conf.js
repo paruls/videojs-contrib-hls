@@ -56,7 +56,7 @@ module.exports = function(config) {
 
     plugins: [
       'karma-qunit',
-      //'karma-chrome-launcher',
+      'karma-chrome-launcher',
       //'karma-firefox-launcher',
       //'karma-ie-launcher',
       //'karma-opera-launcher',
@@ -104,18 +104,19 @@ module.exports = function(config) {
     },
 
     //define SL browsers
-
-    test_browser: { 
-      singleRun: true,
-      base: 'SauceLabs', 
-      browserName: 'chrome',
-      platform: 'Windows XP'
+    customLaunchers: {
+      test_browser: { 
+          singleRun: true,
+          base: 'SauceLabs', 
+          browserName: 'chrome',
+          platform: 'Windows XP'
+        }
     },
 
-    sauce: { 
-         browsers: [chrome],
-        singleRun: true
-     }
+    //sauce: { 
+    browsers: [test_browser]
+        //singleRun: true
+     //}
 
   });
 };

@@ -108,7 +108,7 @@ module.exports = function(config) {
     test_browser: { 
       singleRun: true,
       base: 'SauceLabs', 
-      browserName: 'chrome',ß
+      browserName: 'chrome',
       platform: 'Windows XP'
     },
     //},

@@ -113,10 +113,10 @@ module.exports = function(config) {
         },
     //},
 
-    //sauce: { 
+    sauce: { 
     browsers: [test_browser]
-        //singleRun: true
-     //}
+    singleRun: true
+    }
 
   });
 };

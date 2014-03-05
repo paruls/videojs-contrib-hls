@@ -105,17 +105,17 @@ module.exports = function(config) {
 
     //define SL browsers
     //customLaunchers: {
-      test_browser: { 
-          singleRun: true,
-          base: 'SauceLabs', 
-          browserName: 'chrome',
-          platform: 'Windows XP'
-        },
+    test_browser: { 
+      singleRun: true,
+      base: 'SauceLabs', 
+      browserName: 'chrome',ß
+      platform: 'Windows XP'
+    },
     //},
 
     sauce: { 
-    browsers: [test_browser]
-    singleRun: true
+      browsers: [test_browser],
+      singleRun: true
     }
 
   });

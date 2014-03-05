@@ -114,7 +114,7 @@ module.exports = function(config) {
     },
 
     sauce: { 
-      browsers: [test_browser],
+      browsers: ['test_browser'],
       singleRun: true
     }
 

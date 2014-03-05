@@ -100,7 +100,7 @@ module.exports = function(config) {
       username: "sheff555",
       accessKey: "d04372cc-0fc3-4e59-aa02-3cfd9df03240",
       startConnect: true,
-      tunnelIdentifier: 'karma1394049905',
+      tunnelIdentifier: 'uniquekarmaidentifier',
       testName: 'ps test sample'
     },
 
@@ -111,13 +111,8 @@ module.exports = function(config) {
       base: 'SauceLabs', 
       browserName: 'chrome',
       platform: 'Windows XP'
+      }
     }
-    }
-
-    //sauce: { 
-    //  browsers: ['test_browser'],
-    //  singleRun: true
-    //}
 
   });
 };

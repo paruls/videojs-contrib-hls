@@ -9,7 +9,7 @@ before_script:
 notifications:
   hipchat: 
     rooms:
-        - [fa664f1eb0940506d8c511a791780e] @ [test room]
+        - fa664f1eb0940506d8c511a791780e @ test room
     template:
       - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
 rooms:

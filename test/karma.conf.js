@@ -57,11 +57,11 @@ module.exports = function(config) {
     plugins: [
       'karma-qunit',
       'karma-chrome-launcher',
-      //'karma-firefox-launcher',
+      'karma-firefox-launcher',
       //'karma-ie-launcher',
       //'karma-opera-launcher',
       //'karma-phantomjs-launcher',
-      //'karma-safari-launcher',
+      'karma-safari-launcher',
       'karma-sauce-launcher'
     ],
 
@@ -106,12 +106,34 @@ module.exports = function(config) {
 
     //define SL browsers
     customLaunchers: {
-    test_browser: { 
-      singleRun: true,
-      base: 'SauceLabs', 
-      browserName: 'chrome',
-      platform: 'Windows XP'
+      test_browser: { 
+        singleRun: true,
+        base: 'SauceLabs', 
+        browserName: 'chrome',
+        platform: 'Windows XP'
       }
+
+      firefox: {
+        singleRun: true,
+        base: 'SauceLabs',
+        browserName: 'firefox',
+        platform: 'Windows 8'
+      }
+
+      safari: {
+        singleRun: true,
+        base: 'SauceLabs',
+        browserName: 'safari',
+        platform: 'OS X 10.8'
+      }
+
+      ipad: {
+        singleRun: true,
+        base: 'SauceLabs',
+        browserName: 'ipad',
+        platform:n'OS X 10.8'
+      }
+
     }
 
   });

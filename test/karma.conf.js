@@ -131,7 +131,7 @@ module.exports = function(config) {
         singleRun: true,
         base: 'SauceLabs',
         browserName: 'ipad',
-        platform:n'OS X 10.8'
+        platform:'OS X 10.8'
       }
 
     }

@@ -25,8 +25,13 @@ module.exports = function(config) {
     // - Safari (only Mac)
     // - PhantomJS
     // - IE (only Windows)
+    // -chrome_test
+    // -firefox_test
+    // -safari_test
+    // -ipad_test
+    // -android_test
     // Example usage:
-    browsers: ['chrome_test', 'firefox_test', 'safari_test', 'ipad_test'],
+    browsers: ['chrome_test'],
 
     // List of files / patterns to load in the browser
     // Add any new src files to this list.

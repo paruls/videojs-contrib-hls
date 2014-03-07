@@ -7,7 +7,8 @@ before_script:
 - npm install -g grunt-cli
 - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
 notifications:
-  hipchat: fa664f1eb0940506d8c511a791780e @ test room
+  hipchat: mXH1yrjdKRgPfHfhhkpy @ test room
+#fa664f1eb0940506d8c511a791780e @ test room
     #rooms:
      # - fa664f1eb0940506d8c511a791780e @ test room
     #template:

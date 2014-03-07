@@ -1,25 +1,23 @@
 language: node_js
 node_js:
    - "0.10"
-   #- "0.8"
-   #- "0.11"
+   # - "0.8"
+   # - "0.11"
 before_script:
 - npm install -g grunt-cli
 - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
-#notifications:
-  #hipchat: mXH1yrjdKRgPfHfhhkpy @ test room
-#fa664f1eb0940506d8c511a791780e @ test room
-    #rooms:
-     # - fa664f1eb0940506d8c511a791780e @ test room
-    #template:
-    #  - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
-#rooms:
-#secure: l5TTd5JuPAW883PtcyaIBcJI9Chr9JpsZPQAEUBKAgIEwzuS6y7t5arlkS1PwH6gi1FADzYDf+OXSIou4GkTSrIetnBcT/SAgF0gBKgIhj+eRkuCfZ4VaC7BPhfZ0hgYRE+5Ejf5BM2MJafRm0pj7OlqG4xKrQZwtuV1te5r3JY=
 
 notifications:
   hipchat: 
     rooms:
-      secure: l5TTd5JuPAW883PtcyaIBcJI9Chr9JpsZPQAEUBKAgIEwzuS6y7t5arlkS1PwH6gi1FADzYDf+OXSIou4GkTSrIetnBcT/SAgF0gBKgIhj+eRkuCfZ4VaC7BPhfZ0hgYRE+5Ejf5BM2MJafRm0pj7OlqG4xKrQZwtuV1te5r3JY=
+      - fa664f1eb0940506d8c511a791780e @ test room
+    template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
+
+# notifications:
+#   hipchat: 
+#     rooms:
+#       secure: l5TTd5JuPAW883PtcyaIBcJI9Chr9JpsZPQAEUBKAgIEwzuS6y7t5arlkS1PwH6gi1FADzYDf+OXSIou4GkTSrIetnBcT/SAgF0gBKgIhj+eRkuCfZ4VaC7BPhfZ0hgYRE+5Ejf5BM2MJafRm0pj7OlqG4xKrQZwtuV1te5r3JY=
 
 
 addons:

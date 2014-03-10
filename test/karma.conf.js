@@ -117,7 +117,6 @@ module.exports = function(config) {
         browserName: 'chrome',
         platform: 'Windows XP'
       }
-
       // firefox_test: {
       //   singleRun: true,
       //   base: 'SauceLabs',
@@ -146,7 +145,6 @@ module.exports = function(config) {
       //   platform: 'Linux',
       //   version: '4.3'
       // }
-
     }
 
   });

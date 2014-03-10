@@ -5,6 +5,7 @@ before_script:
 - npm install -g grunt-cli
 - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
 notifications:
+  irc: "chat.freenode.net#videojs"
   hipchat:
     rooms:
       secure: MM+0xeoMvIAU7wxDIiCkQLJ6fxN9f4yftN9QqayinT62JLIusnG/5BZtRkTiYNu1QRTP8FLZNDzemmQKzDQOnTdds+lXVSHnmVz2Oq8RjRm6IYIfusAZikPgUyuXH1Kgc+P5Tn2gluuS76Vo7JKkM2/C9cqP3Wf5UtZSlYhPpsk=

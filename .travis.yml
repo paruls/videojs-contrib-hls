@@ -8,6 +8,8 @@ notifications:
   hipchat:
     rooms:
       secure: Bl+z2EP2uohQEjaZAjVV5qjQlg40L7olXRetaqjna4r6A1HQRwSnnz9djg8sR9MHIqE/jG8yxxegX1rcf6S5tfSaIeIjxXkVdVBviiW14Mqdf1r3jyrU27Yp7hVxLypzOT47dbMs4BFn0LJONt1T1mVufpCM4qZT8wwq/FYmsDg=
+    template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
 addons:
   sauce_connect:
     username: sheff555

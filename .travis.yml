@@ -7,7 +7,7 @@ before_script:
 notifications:
   hipchat:
     rooms:
-      secure: HVIjRAPovv+/ld64oXc4i3eAjNE7AVtdlgLVi7SadAfBDQWRdsF1MXebTQdNlu7rVgCn+l0z0Fwxs7igcCOM2Jr1+R7Fj7Q2N1L42+rubvJ8Xa8ZMrYfNj407OEOY0LzhMnerfvjCHZJCg0TZNnEDAZcYAF+cHF6ugPMkdIau30=
+      secure: Bl+z2EP2uohQEjaZAjVV5qjQlg40L7olXRetaqjna4r6A1HQRwSnnz9djg8sR9MHIqE/jG8yxxegX1rcf6S5tfSaIeIjxXkVdVBviiW14Mqdf1r3jyrU27Yp7hVxLypzOT47dbMs4BFn0LJONt1T1mVufpCM4qZT8wwq/FYmsDg=
 addons:
   sauce_connect:
     username: sheff555
